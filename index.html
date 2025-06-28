@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MD Suhaib Mia - Portfolio</title>
   <link rel="stylesheet" href="./main.css">
+  
 </head>
 <body>
 
@@ -56,7 +57,7 @@
 </div>
 
 <section id="education">
-  <h2>Education</h2>
+  <h2 style="color: orange; font-size: 2em;">Education</h2>
   <div class="edu-card">
     <div>
       <h3>Noakhali Science and Technology University</h3>
@@ -90,7 +91,7 @@
 </section>
 
 <section id="certifications">
-  <h2>Certifications</h2>
+  <h2 style="color: orange; font-size: 2em;">Certifications</h2>
   <div class="cert-card">
     <div>
       <h3>21 Days of Coding</h3>
@@ -112,7 +113,7 @@
 </section>
 
 <section id="activities">
-  <h2>Activities</h2>
+  <h2 style="color: orange; font-size: 2em;">Activities</h2>
   <div class="resume-sub">
     <h3>Projects</h3>
     <ul>
@@ -130,12 +131,12 @@
   </div>
   <div class="resume-sub">
     <h3>Languages</h3>
-    <p>Fluent in English and Bengali (Native)</p>
+    <p> English (Intermediate) and Bengali (Native)</p>
   </div>
 </section>
 
 <section id="resume">
-  <h2>Resume</h2>
+  <h2 style="color: orange; font-size: 2em;">Resume</h2>
 
   <div class="resume-sub">
     <h3>Education</h3>
@@ -189,21 +190,7 @@
     </div>
   </div>
 </section>
-
-<script>
-  function showSection(id) {
-    document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
-    document.querySelector('.hero').classList.add('inactive');
-    document.querySelector('.hero').classList.remove('active');
-
-    if (id === 'home') {
-      document.querySelector('.hero').classList.add('active');
-      document.querySelector('.hero').classList.remove('inactive');
-    } else {
-      document.getElementById(id).classList.add('active');
-    }
-  }
-</script>
+<script src="scripts.js"></script>
 
 </body>
 </html>
