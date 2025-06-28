@@ -1,0 +1,114 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #332a2a;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #332a2a;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: orange;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+    }
+    .hero-text {
+      max-width: 50%;
+    }
+    .hero-text h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .hero-text p {
+      margin: 20px 0;
+      color: #ccc;
+    }
+    .btn {
+      margin-right: 15px;
+      padding: 10px 25px;
+      border-radius: 25px;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background-color: orange;
+      color: white;
+    }
+    .btn-secondary {
+      background-color: #888;
+      color: white;
+    }
+    .social-icons {
+      margin-top: 30px;
+    }
+    .social-icons a {
+      margin-right: 15px;
+      display: inline-block;
+    }
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+    }
+    footer {
+      text-align: left;
+      margin-top: 50px;
+      padding: 10px;
+      background-color: #1e1e1e;
+      color: #aaa;
+    }
+    section {
+      display: none;
+      padding: 50px;
+      background-color: #1e1e1e;
+    }
+    section.active {
+      display: block;
+    }
+    .hero.active {
+      display: flex;
+    }
+    .hero.inactive {
+      display: none;
+    }
+    .edu-card, .cert-card {
+      background-color: #4da3df;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .edu-card div, .cert-card div {
+      flex: 1;
+    }
+    .resume-sub {
+      margin-bottom: 30px;
+    }
+    @media only screen and (min-width: 200px) and (max-width: 576px) {
+      .hero {
+        flex-direction: column;
+      }
+      .hero-text h1 {
+        font-size: 2em;
+      }
+      .btn {
+        margin-top: 10px;
+      }
+    }
